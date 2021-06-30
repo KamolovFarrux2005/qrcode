@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qrcode result</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .bg {
+width: 100%;
+height: auto;
+min-height: 100vh;
+background-image: url(http://i.imgur.com/w16HASj.png);
+background-size: 100% 100%;
+background-position: top center
+}
+
+.content {
+margin-top: 20%
+}
+
+.centered {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+
+
+.secondLine {
+    width: 270px;
+    height: 230px;
+    margin: 0 0 0 45px;
+
+}
+
+.firstLine {
+font-size: 30px;
+color: white
+}
+
+@media only screen and (max-width: 600px) {
+.firstLine {
+    font-size: 20px
+}
+}
+</style>
+<body>
+    <div class="bg text-center">
+        <!--Div for Centered Text & Input-->
+        <div class="centered">
+            <p class="firstLine"> Q &nbsp; R &nbsp; C &nbsp; O &nbsp; D &nbsp; E &nbsp; . &nbsp; M &nbsp; E </p>
+            <img class="secondLine" src="<%= data %>">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
